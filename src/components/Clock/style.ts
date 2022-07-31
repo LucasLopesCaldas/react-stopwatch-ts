@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const MAX_SIZE = 400;
+const MAX_SIZE = 350;
 
 type PointerProp = {
   rotation?: number;
@@ -8,11 +8,14 @@ type PointerProp = {
 
 export const ClockContainer = styled.div`
   max-height: ${MAX_SIZE}px;
+  z-index: -10;
 `;
 
 export const ClockImage = styled.img`
-  width: 100%;
   max-width: ${MAX_SIZE}px;
+  position: absolute;
+  width: 100%;
+
 `;
 
 export const HourPointerImage = styled.img.attrs(
@@ -24,7 +27,6 @@ export const HourPointerImage = styled.img.attrs(
 )`
   max-width: ${MAX_SIZE}px;
   position: absolute;
-  left: 0;
   width: 100%;
 `;
 
@@ -37,7 +39,6 @@ export const MinPointerImage = styled.img.attrs(
 )`
   max-width: ${MAX_SIZE}px;
   position: absolute;
-  left: 0;
   width: 100%;
 `;
 
@@ -51,5 +52,5 @@ export const SecPointerImage = styled.img.attrs(
   width: 100%;
   max-width: ${MAX_SIZE}px;
   left: 0;
-  position: absolute;
+  position: relative;
 `;

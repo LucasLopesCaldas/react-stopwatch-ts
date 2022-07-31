@@ -13,12 +13,12 @@ export default function DigitalClock({ time }: props) {
 
   return (
     <S.ClockContainer>
-      <S.ClockImage draggable={false} src='/src/assets/clock.svg' />
-      <S.MinPointerImage draggable={false} rotation={min} src='/src/assets/clock-pointer.svg' />
-      <S.HourPointerImage draggable={false} rotation={hour} src='/src/assets/clock-pointer.svg' />
+      <S.ClockImage draggable={false} src='/src/assets/clock-white.svg' />
+      <S.HourPointerImage draggable={false} rotation={hour} src='/src/assets/clock-pointer4.svg' />
+      <S.MinPointerImage draggable={false} rotation={min} src='/src/assets/clock-pointer3.svg' />
       <S.SecPointerImage draggable={false}
         rotation={second}
-        src='/src/assets/clock-pointer.svg'
+        src='/src/assets/clock-pointer2.svg'
       />
     </S.ClockContainer>
   );

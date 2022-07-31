@@ -1,14 +1,24 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { StopwatchContext } from '../../contexts/StopwatchContext';
 import { Time, toMilli } from '../../utils/Time';
+import * as S from './style';
 
-const input = (func: (p: number) => void, max?: number, min?: number) => (
-  <input
+const input = (
+  func: (p: number) => void,
+  max?: number,
+  min?: number,
+  defaultV?: string,
+  pad?: number
+) => (
+  <S.DigitalClockInput
     type='number'
     max={max}
+    defaultValue={defaultV}
     min={min || 0}
     onChange={({ target }) => {
       func(parseInt(target.value) || 0);
+      target.value = String(parseInt(target.value));
+      target.value = target.value.padStart(pad || 0, '0');
     }}
   />
 );
@@ -26,10 +36,10 @@ export default function TimeSet() {
 
   return (
     <div>
-      {input(setHour, 23)}
-      {input(setMin, 59)}
-      {input(setSecond, 59)}
-      {input(setMillisec, 999)}
+      {input(setHour, 23, 0, '00', 2)}
+      {input(setMin, 59, 0, '00', 2)}
+      {input(setSecond, 59, 0, '00', 2)}
+      {input(setMillisec, 999, 0, '000', 3)}
     </div>
   );
 }
