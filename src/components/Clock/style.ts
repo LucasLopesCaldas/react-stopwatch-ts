@@ -18,13 +18,13 @@ export const ClockImage = styled.img`
 
 `;
 
-export const HourPointerImage = styled.img.attrs(
+export const HourPointerImage = styled.img.attrs<PointerProp>(
   ({ rotation }: PointerProp) => ({
     style: {
       transform: `rotate(${rotation}deg)`,
     },
   })
-)`
+)<PointerProp>`
   max-width: ${MAX_SIZE}px;
   position: absolute;
   width: 100%;
@@ -36,7 +36,7 @@ export const MinPointerImage = styled.img.attrs(
       transform: `rotate(${rotation}deg)`,
     },
   })
-)`
+)<PointerProp>`
   max-width: ${MAX_SIZE}px;
   position: absolute;
   width: 100%;
@@ -48,7 +48,7 @@ export const SecPointerImage = styled.img.attrs(
       transform: `rotate(${rotation}deg)`,
     },
   })
-)`
+)<PointerProp>`
   width: 100%;
   max-width: ${MAX_SIZE}px;
   left: 0;
