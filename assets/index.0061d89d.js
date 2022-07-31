@@ -94,7 +94,7 @@ Error generating stack: `+o.message+`
   max-width: ${Qr}px;
   left: 0;
   position: relative;
-`;function O0({time:e}){const t=(e.hour+e.min/60)/12*360,n=(e.min+e.second/60)/60*360,r=(e.second+e.millisec/1e3)/60*360;return Qn($0,{children:[oe(T0,{draggable:!1,src:"/src/assets/clock-white.svg"}),oe(z0,{draggable:!1,rotation:t,src:"/src/assets/clock-pointer4.svg"}),oe(R0,{draggable:!1,rotation:n,src:"/src/assets/clock-pointer3.svg"}),oe(L0,{draggable:!1,rotation:r,src:"/src/assets/clock-pointer2.svg"})]})}const I0=rt.div`
+`;function O0({time:e}){const t=(e.hour+e.min/60)/12*360,n=(e.min+e.second/60)/60*360,r=(e.second+e.millisec/1e3)/60*360;return Qn($0,{children:[oe(T0,{draggable:!1,src:"/public/clock-white.svg"}),oe(z0,{draggable:!1,rotation:t,src:"/public/clock-pointer4.svg"}),oe(R0,{draggable:!1,rotation:n,src:"/public/clock-pointer3.svg"}),oe(L0,{draggable:!1,rotation:r,src:"/public/clock-pointer2.svg"})]})}const I0=rt.div`
   border: 12px solid white;
   border-radius: 10px;
   padding: 3px 5px;
