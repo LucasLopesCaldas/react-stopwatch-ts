@@ -6,10 +6,11 @@ import DigitalClock from '../DigitalClock';
 import TimeSet from '../TimeSet';
 import * as S from './style';
 
-const TIME_INTERVAL = 10;
-const UPDATE_INTERVAL = 10;
+const UPDATE_INTERVAL = 1;
+const MIN_TIME = 1;
 
 let milli = 0;
+let initialMilli = 0;
 const time = new Time();
 
 export default function Stopwatch() {
@@ -18,28 +19,29 @@ export default function Stopwatch() {
   const { maxMillisec, running, setRunning } = useContext(StopwatchContext);
 
   useEffect(() => {
-    setMillisec(maxMillisec);
+    if (milli <= 0) {
+      setRunning(false);
+      setMillisec(maxMillisec);
+    }
   }, [maxMillisec]);
 
   function start() {
+    if (maxMillisec < MIN_TIME) return;
     setRunning(true);
+    initialMilli = Date.now();
     clearInterval(timerId);
     milli = maxMillisec;
     setMillisec(milli);
 
     const id = setInterval(() => {
-      milli -= 10;
-      if (milli <= 0) {
-        milli = 0;
-        setRunning(false);
-        clearInterval(id);
-      }
-    }, TIME_INTERVAL);
+      milli = maxMillisec - (Date.now() - initialMilli);
 
-    const secId = setInterval(() => {
       setMillisec(milli);
 
-      if (milli <= 0) clearInterval(secId);
+      if (milli <= 0) {
+        clearInterval(id);
+        setMillisec(0);
+      }
     }, UPDATE_INTERVAL);
 
     setTimerId(id);
@@ -56,7 +58,15 @@ export default function Stopwatch() {
         <S.StopwatchButton type='button' onClick={start}>
           {running ? 'RESTART' : 'START'}
         </S.StopwatchButton>
-        <S.StopwatchButton type='button' onClick={() => (milli = 0)}>
+        <S.StopwatchButton
+          disabled={milli === 0}
+          type='button'
+          onClick={() => {
+            clearInterval(timerId);
+            setMillisec(0);
+            milli = 0;
+          }}
+        >
           STOP
         </S.StopwatchButton>
       </S.StopwatchButtonPanel>

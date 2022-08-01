@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useState } from 'react';
 
 const initialState = {
-  maxMillisec: 3,
+  maxMillisec: 0,
   setMaxMillisec() {},
   setRunning() {},
   running: false
@@ -23,7 +23,7 @@ type props = {
 export function StopwatchProvider({ children }: props) {
   const [maxMillisec, setMaxMillisec] = useState(initialState.maxMillisec);
   const [running, setRunning] = useState(initialState.running);
-
+  
   const value = {
     maxMillisec,
     setMaxMillisec,

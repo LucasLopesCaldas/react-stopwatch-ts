@@ -14,6 +14,7 @@ export default createGlobalStyle`
   }
 
   body {
+    overflow: hidden;
     background-color: #232323;
   }
 `;

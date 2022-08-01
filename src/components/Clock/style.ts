@@ -15,7 +15,6 @@ export const ClockImage = styled.img`
   max-width: ${MAX_SIZE}px;
   position: absolute;
   width: 100%;
-
 `;
 
 export const HourPointerImage = styled.img.attrs<PointerProp>(
