@@ -94,7 +94,7 @@ Error generating stack: `+o.message+`
   max-width: ${Qr}px;
   left: 0;
   position: relative;
-`;function O0({time:e}){const t=(e.hour+e.min/60)/12*360,n=(e.min+e.second/60)/60*360,r=(e.second+e.millisec/1e3)/60*360;return Qn($0,{children:[oe(T0,{draggable:!1,src:"/src/images/clock-white.svg"}),oe(z0,{draggable:!1,rotation:t,src:"/src/images/clock-pointer4.svg"}),oe(R0,{draggable:!1,rotation:n,src:"/src/images/clock-pointer3.svg"}),oe(L0,{draggable:!1,rotation:r,src:"/src/images/clock-pointer2.svg"})]})}const I0=rt.div`
+`;function O0({time:e}){const t=(e.hour+e.min/60)/12*360,n=(e.min+e.second/60)/60*360,r=(e.second+e.millisec/1e3)/60*360;return Qn($0,{children:[oe(T0,{draggable:!1,src:"/images/clock-white.svg"}),oe(z0,{draggable:!1,rotation:t,src:"/images/clock-pointer4.svg"}),oe(R0,{draggable:!1,rotation:n,src:"/images/clock-pointer3.svg"}),oe(L0,{draggable:!1,rotation:r,src:"/images/clock-pointer2.svg"})]})}const I0=rt.div`
   border: 12px solid white;
   border-radius: 10px;
   padding: 3px 5px;
@@ -138,7 +138,7 @@ Error generating stack: `+o.message+`
 `;function W0(){return oe(Sm,{children:oe(fd,{path:"/",element:oe(H0,{children:oe($m,{children:oe(V0,{})})})})})}const Q0=N0`
   @font-face{
     font-family:'clock';
-    src: url('/src/assets/clock-font2.otf');
+    src: url('/images/clock-font2.otf');
  }
 
   * {
