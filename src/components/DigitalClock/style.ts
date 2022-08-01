@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const DigitalClockContainer = styled.div`
-  border: 12px solid white;
+  border: 20px solid white;
   border-radius: 10px;
   padding: 3px 5px;
   padding-top: 6px;
@@ -12,5 +12,5 @@ export const DigitalClockContainer = styled.div`
 
 export const DigitalClockText = styled.span`
   font-family: clock;
-  font-size: 1.3em;
+  font-size: 2.3em;
 `;

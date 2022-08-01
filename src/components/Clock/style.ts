@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const MAX_SIZE = 350;
+const MAX_SIZE = 600;
 
 type PointerProp = {
   rotation?: number;

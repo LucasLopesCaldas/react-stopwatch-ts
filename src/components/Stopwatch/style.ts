@@ -15,11 +15,14 @@ export const StopwatchButtonPanel = styled.div`
 `;
 
 export const StopwatchButton = styled.button`
-  padding: 5px 14px;
+  padding: 10px 20px;
   border: 0;
-  border-radius: 6px;
+  margin-top: -50px;
+  border-radius: 10px;
   background-color: #343434;
   color: white;
+  font-size: 2em;
+  font-family: monospace;
   cursor: pointer;
 
   &:hover {
