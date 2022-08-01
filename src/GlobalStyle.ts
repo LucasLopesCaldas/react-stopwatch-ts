@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   @font-face{
     font-family:'clock';
-    src: url('/src/assets/clock-font2.otf');
+    src: url('/images/clock-font2.otf');
  }
 
   * {
