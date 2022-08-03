@@ -33,19 +33,6 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter1916"
-       x="-0.63324513"
-       width="2.2664903"
-       y="-0.20593763"
-       height="1.4118753">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="10.546698"
-         id="feGaussianBlur1918" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       style="color-interpolation-filters:sRGB"
        id="filter2088"
        x="-0.28688824"
        width="1.5737765"
@@ -55,6 +42,19 @@
          inkscape:collect="always"
          stdDeviation="7.9611449"
          id="feGaussianBlur2090" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter864"
+       x="-0.58797423"
+       width="2.1759485"
+       y="-0.21122663"
+       height="1.4224533">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.0170679"
+         id="feGaussianBlur866" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -71,9 +71,9 @@
      id="namedview4"
      showgrid="true"
      inkscape:snap-page="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="354.62972"
-     inkscape:cy="356.11289"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="376.64169"
+     inkscape:cy="248.75756"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -96,8 +96,8 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path1298"
-       d="m 359.96906,66.06795 v 0 l 22.2,122.91136 -39.972,-42.91136 z"
-       style="opacity:0.633;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36936653;stroke-opacity:1;filter:url(#filter1916)" />
+       d="m 359.96906,66.06795 v 0 l 16.54315,91.09156 -32.72416,-0.48496 z"
+       style="opacity:0.604;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36936653;stroke-opacity:1;filter:url(#filter864)" />
     <ellipse
        ry="30.389175"
        rx="33.299984"

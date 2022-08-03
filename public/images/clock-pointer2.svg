@@ -663,8 +663,8 @@
      showgrid="true"
      inkscape:snap-page="true"
      inkscape:zoom="1.4142136"
-     inkscape:cx="263.05894"
-     inkscape:cy="391.93962"
+     inkscape:cx="376.49251"
+     inkscape:cy="367.06953"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -695,8 +695,8 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path3552"
-       d="m 359.96906,8.4685214 v 0 L 376.51221,146.06795 h -34.147 z"
-       style="opacity:0.608;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44400007;stroke-opacity:1;filter:url(#filter4146)" />
+       d="m 359.96906,8.4685214 v 0 l 19.04315,150.3494286 -37.897,-0.75 z"
+       style="opacity:0.60799997;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.44400007;stroke-opacity:1;filter:url(#filter4146)" />
     <g
        id="g12-2"
        transform="translate(-0.01625993,-59.599694)"
